@@ -2,10 +2,11 @@
 <html>
 
 <head>
-<title>Css Mini Project</title>
-<meta charset="UTF-8"/>
-<meta name="viewpoint" content="width=device-width, initial-scale=1"/>
-<link rel="stylesheet" type="text/css" href="./assets/style.css" />
+    <title>Css Mini Project</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
 </head>
 
 <body>
@@ -18,75 +19,87 @@
 
     </header>
 
-    <main class="boxes">
-
-        <section>
+    <main>
+        <section class="row justify">
+        <article>
+        <figure class="card flexbox">
             <h2>Flexbox Row</h2>
             <p>Use these three properties to create a flexbox row layout.</p>
             <pre>.row {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
             </pre>
-        </section>
-        <section>
+        </figure>
+        </article>
+        <article>
+        <figure class="card flexbox">
             <h2>Flexbox Column</h2>
             <p>Use this to create a flexbox column.</p>
             <pre>.column {
-                    display: flex;
-                    flex-direction:column;
-                }
+    display: flex;
+    flex-direction:column;
+}
             </pre>
-        </section>
-        <section>
+        </figure>
+        </article>
+        <article>
+        <figure class="card flexbox">
             <h2>CSS Grid Layout</h2>
             <p>Building a 12 column layout using CSS grid.</p>
             <pre>.grid {
-                    display: grid;
-                    width: 100%;
-                    grid-template-columns:
-                repeat(12, 1fr);                
-                }
+    display: grid;
+    width: 100%;
+    grid-template-columns:
+    repeat(12, 1fr);                
+}
             </pre>
-        </section>
-        <section>
+        </figure>
+        </article>
+        <article>
+        <figure class="card flexbox">
             <h2>Linear Gradients</h2>
             <p>This will create a background linear gradient from top to bottom.</p>
             <pre>.linear-gradient-background {
-                background-image: linear-gradient(rgba(232,102,236,0.3)0%,rgba(232,102,236,0.6)100%);
+    background-image: linear-gradient(rgba(232,102,236,0.3)0%,
+    rgba(232,102,236,0.6)100%);
+}
             </pre>
-        </section>
-        <section>
+        </figure>
+        </article>
+        <article>
+        <figure class="card flexbox">
             <h2>Box Transition Glow</h2>
             <p>use transition and box shadows to glow on hover</p>
             <pre>.code-card .card-header {
-                    border-radius: 8px;
-                    transition: all 0.5s ease-in-out;
-                }
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
 
-                .code-card:hover,
-                .code-card:hover .card-header {
-                    box-shadow: inset 0px 0px 8px
-                    rgba(232,102,236,1), 0 0 15px
-                    rgba(232,102,236,1)
-                }
+.code-card:hover,
+.code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px
+    rgba(232,102,236,1), 
+    0 0 15px rgba(232,102,236,1)
+}
             </pre>
-        </section>
-        <section>
+        </figure>
+        </article>
+        <article>
+        <figure class="card flexbox">
             <h2>Overlay Card With Title</h2>
             <p>use position properties and negative margins to raise elements higher
                than their natural starting point.
             </p>
             <pre>.card-header {
-                    position: relative;
-                    margin-top: -20px;
-                }
+position: relative;
+margin-top: -20px;
+}
             </pre>
-        </section>
-    
-
-
+        </figure>
+    </article>
+    </section>
 
     </main>
 

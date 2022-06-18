@@ -1,0 +1,137 @@
+:root {
+    --lightblue: #add8e6;
+    --cream: #ffffcc; 
+    --navyblue: #000066;
+    --lightgray: #8c8c8c;
+    --white: #ffff ;
+}
+
+body {
+    background-color: var(--cream);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+main {
+    margin: 20px auto;
+}
+
+footer {
+    margin: 15px;
+    text-align: center; 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.justify {
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    flex: 1 0 100%;
+    padding: 15px;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 15px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 20px;
+    outline: 2px dashed var(--lightblue);
+}
+
+ h2 {
+    position: relative;
+    margin: -40px 0 15px 0;
+    padding: 5px 10px;
+    background-color: var(--navyblue);
+    color: var(--white);
+    border: 2px solid var(--lightblue);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.card {
+    position: relative;
+    padding: 5px 10px;
+    background-color: var(--navyblue);
+    color: var(--white);
+    border: 2px solid var(--lightblue);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover,
+.card:hover h2 {
+  box-shadow: inset 0px 0px 8px var(--lightgray), 0 0 15px var(--lightgray);
+}
+
+.card pre {
+    flex-grow: 1;
+  }
+
+figure pre {
+    white-space: pre-wrap;
+    overflow: auto;
+    tab-size: 4;
+    padding: 12px 10px;
+    color: var(--white);
+    border-radius: 8px;
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+    );
+    display: flex;
+    align-items: center;
+}
+
+pre:active {
+    user-select: all;
+}
+  
+@media screen and (min-width: 768px) {
+    article {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }   
+
+    article:last-child{
+        flex-grow: 1;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    article{
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
